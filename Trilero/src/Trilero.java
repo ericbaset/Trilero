@@ -263,8 +263,10 @@ public class Trilero extends JFrame {
 		
 
 	
-	//Metodo para la eleccion aleatoria del cubilete
-	//Saca un numero aleatorio entre 1 2 3, y segun el numero cambia la variable "resultado" a A B C
+
+	/**
+	 * Metodo para la eleccion aleatoria del cubilete. Saca un numero aleatorio entre 1 2 3, y segun el numero cambia la variable "resultado" a A B C
+	 */
 	public void CubileteRandom(){
 
 		int a;
@@ -278,16 +280,23 @@ public class Trilero extends JFrame {
 		break;
 		default: result="Error";
 		break;
+		
 		}
+
 	}
-	//Metodo para cuando aciertas
+
+	/**
+	 * Metodo para cuando aciertas
+	 */
 	public void Acierto(){
 		WinOrLose.setText("Correcto, has acertado");
 		aciertos++;
 		AjustarResultados();
 		SumarDinero();
 	}
-	//Metodo para cuando fallas
+	/**
+	 * Metodo para cuando fallas
+	 */
 	public void Fallo(){
 		WinOrLose.setText("Error, has fallado");
 		fallos++;
@@ -297,7 +306,10 @@ public class Trilero extends JFrame {
 		
 	}
 	
-	//Metodo para ajustar los resultados y preparar la siguiente ronda "CubileteRandom()"
+
+	/**
+	 * Metodo para ajustar los resultados y preparar la siguiente ronda "CubileteRandom()"
+	 */
 	public void AjustarResultados(){
 		intentos++;
 		numIntentos.setText(""+intentos);
@@ -306,13 +318,19 @@ public class Trilero extends JFrame {
 		CubileteRandom();
 	}
 	
-	//Metodo para ajustar el resultado del dinero actual en caso de acertar
+
+	/**
+	 * Metodo para ajustar el resultado del dinero actual en caso de acertar
+	 */
 	public void SumarDinero(){
 		dinero = dinero + apuesta;
 		DineroActual.setText(""+dinero);
 	}
 	
-	//Metodo para ajustar el resultado del dinero actual en caso de fallar
+
+	/**
+	 * Metodo para ajustar el resultado del dinero actual en caso de fallar
+	 */
 	public void RestarDinero(){
 		dinero = dinero - apuesta;
 		DineroActual.setText(""+dinero);
