@@ -2,9 +2,12 @@ DESCRIPCION DEL PROGRAMA
 Este programa se basa en elegir una opcion: "A B C" que representan a 3 cubiletes con una bola dentro, si el cubilete elegido era el que
 contenia la bola habras acertado, en caso contrario habras fallado.
 Los resultados determinan si llevas una "buena racha" o estas perdiendo hasta los pantalones.
+La forma mas logica de jugar es elegir una cantidad de intentos y ver quien gana mas dinero. (el mejor de 10 por ejemplo).
+Tambien se puede jugar a ver quien pierde mas, o quien acierta mas etc...
 
 MODO DE FUNCIONAMIENTO DEL PROGRAMA
 Al ejecutar el programa saldra una ventana con botones
+Abajo eliges la cantidad que quieres apostar
 Al interactuar con los botones "A B C" el programa respondera diciendo si has ganado o perdido
 Los resultados quedaran reflejados en la ventana
 En caso de querer reiniciarlo, simplemente apreta el boton "reset"
